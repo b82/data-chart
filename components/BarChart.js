@@ -18,7 +18,7 @@ export default class LineChart extends React.Component {
                         return index % 2 === 0 ? value : null;
                     }
                 },
-                height: '400px'
+                height: '600px'
             },
             type: 'Bar'
         }

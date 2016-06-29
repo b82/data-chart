@@ -56,11 +56,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _LineChart = __webpack_require__(171);
-
-	var _LineChart2 = _interopRequireDefault(_LineChart);
-
-	var _BarChart = __webpack_require__(172);
+	var _BarChart = __webpack_require__(171);
 
 	var _BarChart2 = _interopRequireDefault(_BarChart);
 
@@ -90,9 +86,6 @@
 	                {
 	                    __self: this
 	                },
-	                _react2.default.createElement(_LineChart2.default, {
-	                    __self: this
-	                }),
 	                _react2.default.createElement(_BarChart2.default, {
 	                    __self: this
 	                })
@@ -20401,7 +20394,8 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 168 */
+/* 168 */,
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20457,7 +20451,7 @@
 	  }, {
 	    key: 'updateChart',
 	    value: function updateChart(config) {
-	      var Chartist = __webpack_require__(169);
+	      var Chartist = __webpack_require__(170);
 
 	      var type = config.type;
 	      var data = config.data;
@@ -20509,7 +20503,7 @@
 
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
@@ -24846,7 +24840,6 @@
 
 
 /***/ },
-/* 170 */,
 /* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -24862,82 +24855,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactChartist = __webpack_require__(168);
-
-	var _reactChartist2 = _interopRequireDefault(_reactChartist);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LineChart = function (_React$Component) {
-	    _inherits(LineChart, _React$Component);
-
-	    function LineChart() {
-	        _classCallCheck(this, LineChart);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(LineChart).apply(this, arguments));
-	    }
-
-	    _createClass(LineChart, [{
-	        key: 'render',
-	        value: function render() {
-
-	            var data = {
-	                labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
-	                series: [[1, 2, 4, 8, 6, -2, -1, -4, -6, -2]]
-	            };
-
-	            var options = {
-	                high: 10,
-	                low: -10,
-	                axisX: {
-	                    labelInterpolationFnc: function labelInterpolationFnc(value, index) {
-	                        return index % 2 === 0 ? value : null;
-	                    }
-	                },
-	                showArea: true
-	            };
-
-	            var type = 'Line';
-
-	            return _react2.default.createElement(
-	                'div',
-	                {
-	                    __self: this
-	                },
-	                _react2.default.createElement(_reactChartist2.default, { data: data, options: options, type: type, __self: this
-	                })
-	            );
-	        }
-	    }]);
-
-	    return LineChart;
-	}(_react2.default.Component);
-
-	exports.default = LineChart;
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactChartist = __webpack_require__(168);
+	var _reactChartist = __webpack_require__(169);
 
 	var _reactChartist2 = _interopRequireDefault(_reactChartist);
 
@@ -24970,7 +24888,7 @@
 	                        return index % 2 === 0 ? value : null;
 	                    }
 	                },
-	                height: '400px'
+	                height: '600px'
 	            },
 	            type: 'Bar'
 	        };

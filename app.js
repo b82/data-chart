@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import LineChart from './components/LineChart'
 import BarChart from './components/BarChart'
 
 class Main extends React.Component {
@@ -9,7 +8,6 @@ class Main extends React.Component {
 
         return (
             <div>
-                <LineChart />
                 <BarChart />
             </div>
         )
